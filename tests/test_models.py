@@ -33,6 +33,6 @@ class TestModel(APITestCase):
         
         
     def test_creates_super_with_super_user_status(self):
-        with self.assertRaisesMessage(ValueError,"   Superuser must have is_superuser=True."):
+        with self.assertRaisesMessage(ValueError,"Superuser must have is_superuser=True."):
             User.objects.create_superuser(username="lele",email="missmakau9@gmail.com",password="admin2", is_superuser=False)
      
