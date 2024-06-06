@@ -105,8 +105,12 @@ AUTH_PASSWORD_VALIDATORS = [
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES':[
-        'authentication.jwt.JWTAuthentication',]
+        'authentication.jwt.JWTAuthentication',],
+    'DEFAULT_PAGINATION_CLASS' : "rest_framework.pagination.LimitOffsetPagination",
+    'PAGE_SIZE': 12,
+    
 }
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
