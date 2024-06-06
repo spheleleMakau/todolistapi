@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "todos",
     "authentication",
     "rest_framework",
+    "django_filters"
 ]
 
 MIDDLEWARE = [
